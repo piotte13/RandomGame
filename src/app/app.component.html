@@ -1,3 +1,24 @@
-<h1>
-  {{title}}
-</h1>
+<app-banner></app-banner>
+
+<div class="container">
+    <div class="card-container">
+        <div class="card">
+            <div class="player">
+                <table>
+                    <tr *ngFor="let dude of players" class="result-row">
+                        <td class="name">
+                            {{dude.name}}
+                        </td>
+
+                        <td>
+                            {{dude.dick}}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+        <div class="btn btn-primary" (click)="shuffle()">
+            Shuffle
+        </div>
+</div>

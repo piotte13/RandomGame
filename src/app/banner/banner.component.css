@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+.banner{
+    background-color: #2196F3;
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.title{
+    color: black;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+}
