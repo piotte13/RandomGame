@@ -1,21 +1,14 @@
-body{
-    height: 100%;
-    background-color: #fafafa;
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  display: table;
+  background-color: rgba(0,0,0,1);
 }
 
-.card-container{
-    box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.2);
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 35px;
-    background-color: #ffffff;
-    margin-bottom: 25px;
-}
-
-.name{
-    padding-right: 20px;
-}
-
-.result-row{
-     height: 40px;
+.footer-text{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }

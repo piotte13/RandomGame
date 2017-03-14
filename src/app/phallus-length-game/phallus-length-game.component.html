@@ -1,0 +1,40 @@
+<div class="container">
+
+  <div class="card-container">
+    <div class="card">
+     <input class="form-control"
+            id="player-input"
+            placeholder="Add a bro!"
+            #newPlayer
+            (keyup.enter)="addPlayer(newPlayer.value); newPlayer.value=''">
+      <button class="btn btn-danger" (click)="addPlayer(newPlayer.value); newPlayer.value=''">Add Bro</button>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="player">
+        <table>
+          <tr *ngFor="let dude of players" class="result-row">
+            <td>
+              <button class="btn btn-link delete-button" (click)="deletePlayer(dude)">X</button>
+            </td>
+            <td class="name">
+              {{dude.name}}
+            </td>
+
+            <td>
+              {{dude.dick}}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="btn btn-danger" (click)="populatePlayersDick()">
+    Shuffle
+  </div>
+  <div class="btn btn-default" routerLink="/Game-choice">
+    Change Game
+  </div>
+</div>

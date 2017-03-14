@@ -1,24 +1,9 @@
 <app-banner></app-banner>
 
-<div class="container">
-    <div class="card-container">
-        <div class="card">
-            <div class="player">
-                <table>
-                    <tr *ngFor="let dude of players" class="result-row">
-                        <td class="name">
-                            {{dude.name}}
-                        </td>
+<router-outlet></router-outlet>
 
-                        <td>
-                            {{dude.dick}}
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-        <div class="btn btn-primary" (click)="shuffle()">
-            Shuffle
-        </div>
-</div>
+<footer id="footer" class="footer">
+  <div class="container footer-text">
+    <div class="text-muted">Hi! this is a troll website by The Wolves! have fun!</div>
+  </div>
+</footer>

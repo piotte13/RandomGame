@@ -1,0 +1,17 @@
+.card-container{
+  box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 35px;
+  background-color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.dice-result{
+  font-size: 150px;
+}
+
+.dice-table{
+  margin-top: 200px;
+  width: 100%
+}
