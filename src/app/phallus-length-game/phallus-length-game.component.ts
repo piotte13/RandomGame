@@ -27,7 +27,8 @@ export class PhallusLengthGameComponent{
   }
 
   public addPlayer(name){
-    this.players.push(new Player(name));
+    console.log(name);
+    if(name.length > 0) this.players.push(new Player(name));
   }
 
   public deletePlayer(player: Player){
