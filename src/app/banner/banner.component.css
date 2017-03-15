@@ -11,3 +11,16 @@
     font-size: 40px;
     margin-bottom: 5px;
 }
+
+.title:hover{
+  color: #c9302c;
+}
+
+.title:active{
+  color: white;
+}
+
+.title:visited{
+  color: white;
+}
+
