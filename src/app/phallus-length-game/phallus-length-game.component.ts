@@ -26,11 +26,11 @@ export class PhallusLengthGameComponent{
   }
 
   protected populatePlayersDick(){
+    this.audio.play();
     this.animate = !this.animate;
     for(let i = 0;  i < this.players.length; i++){
       this.players[i].dick = this.calculateDickLength();
     }
-    this.audio.play();
     _.delay(() => {this.animate = true;}, 5);
   }
 

@@ -14,6 +14,6 @@ export class Dice6f {
 
   constructor(value: number) {
     this._value = value;
-    this._image = PATH_TO_ASSET + "dice-" + this._value.toString() + ".png";
+    this._image = PATH_TO_ASSET + "dice-" + this._value.toString() + ".jpg";
   }
 }
