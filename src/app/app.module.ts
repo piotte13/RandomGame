@@ -11,6 +11,7 @@ import { DropdownModule } from 'ng2-bootstrap'
 
 import { RouterModule, Routes } from '@angular/router';
 import { DiceGameComponent } from './dice-game/dice-game.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 const appRoutes: Routes = [
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
     InitFormComponent,
     BannerComponent,
     PhallusLengthGameComponent,
-    DiceGameComponent
+    DiceGameComponent,
+    FooterComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

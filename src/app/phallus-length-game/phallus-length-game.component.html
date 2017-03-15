@@ -24,7 +24,7 @@
             </td>
 
             <td>
-              {{dude.dick}}
+              <div [ngClass]="{'dude-dick-is-up': animate, 'dude-dick': !animate}">{{dude.dick}}</div>
             </td>
           </tr>
         </table>

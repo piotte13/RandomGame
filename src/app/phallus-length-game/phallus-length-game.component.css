@@ -32,3 +32,17 @@
   text-decoration: none;
   background-color: transparent;
 }
+
+.dude-dick-is-up{
+  overflow: hidden;
+  width: 100%;
+  -webkit-transition: width .5s; /* Safari */
+  transition: width .5s;
+  transition-timing-function: cubic-bezier(0.73, -0.01, 1, 0.65);
+}
+
+.dude-dick{
+  overflow: hidden;
+  width: 0;
+}
+

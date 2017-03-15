@@ -10,6 +10,8 @@ import * as _ from "lodash";
 export class PhallusLengthGameComponent{
 
   private players: Array<Player>;
+  public animate: boolean = false;
+  public audio;
 
   constructor() {
     this.players = new Array<Player>();
@@ -18,12 +20,18 @@ export class PhallusLengthGameComponent{
     this.players.push(new Player("Maxime"));
     this.players.push(new Player("Jean"));
     this.players.push(new Player("Shelsea"));
+    this.audio = new Audio();
+    this.audio.src = "../../assets/growing_sound_effect.mp3"
+    this.audio.load();
   }
 
   protected populatePlayersDick(){
+    this.animate = !this.animate;
     for(let i = 0;  i < this.players.length; i++){
       this.players[i].dick = this.calculateDickLength();
     }
+    this.audio.play();
+    _.delay(() => {this.animate = true;}, 5);
   }
 
   public addPlayer(name){

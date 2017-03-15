@@ -1,9 +1,21 @@
 export class Player {
-  public name: string;
-  public dick: string;
+  private _name: string;
+  private _dick: string;
+
+  get name(): string {
+    return this._name;
+  }
+
+  get dick(): string {
+    return this._dick;
+  }
+
+  set dick(value: string) {
+    this._dick = value;
+  }
 
   public constructor(name){
-    this.name = name;
-    this.dick = "";
+    this._name = name;
+    this._dick = "";
   }
 }
