@@ -2,30 +2,32 @@
   box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   padding: 20px;
-  margin-top: 35px;
+  margin-top: 50px;
   background-color: #ffffff;
   margin-bottom: 25px;
 }
 
 .dice-result{
-  font-size: 150px;
+  font-size: 100px;
   text-align: center;
-}
-
-.dice-table{
-  /*margin-top: 200px;*/
-  /*width: 100%*/
-
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 80%;
+  padding: 20px 0 20px 0;
 }
 
 .dice-image{
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: auto;
+}
+
+.dices-container{
+  margin-top: 15%;
+  text-align: center;
+}
+
+/* centered columns styles */
+.row-centered {
+  text-align:center;
+}
+.col-centered {
+  display:inline-block;
+  float:none;
 }

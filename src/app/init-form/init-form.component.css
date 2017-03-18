@@ -1,36 +1,22 @@
-.card{
-  box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  padding: 20px;
-  margin-top: 100px;
-  background-color: #ffffff;
-  margin-bottom: 25px;
-  height: 300px;
-}
-
-.card:hover{
+.game-image:hover{
   box-shadow: 3px 5px 14px 6px rgba(0,0,0,0.3);
   border: solid #c9302c ;
 }
 
 .card-container{
-  display: table-cell;
+  margin: 7% auto 0 auto;
+  padding: 0 2% 0 2%;
+}
 
+.game-image{
+  box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
 }
 
 .cards{
-  display: table;
-  width: 100%;
-}
-
-.dice{
-  background-image: url("../../assets/dice.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.dick{
-  background-image: url("../../assets/einstein.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+ //margin: auto;
 }

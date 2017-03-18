@@ -1,12 +1,12 @@
 <div class="container">
-<div class="card-container row">
+<div class="card-container clearfix">
   <div class="card col-lg-12 text-center">
     <div class="btn-group" dropdown>
       <button id="single-button" type="button" class="btn btn-danger" dropdownToggle>
         Quantity of dices <span class="caret"></span>
       </button>
       <ul dropdownMenu role="menu" class="text-center" aria-labelledby="single-button">
-          <li role="menuitem" *ngFor="let number of possibleNumberOfDiceChoice"><a class="dropdown-item" (click)="roll(number)">{{number}}</a></li>
+          <li role="menuitem" *ngFor="let number of possibleNumberOfDiceChoice"><a class="dropdown-item" (click)="rollDices(number)">{{number}}</a></li>
       </ul>
     </div>
     <div class="btn btn-default" routerLink="/Game-choice">
@@ -15,13 +15,10 @@
   </div>
 </div>
 
-  <table class="dice-table">
-    <tr class="row">
-      <td *ngFor="let dice of dices" class="dice-result col-lg-2">
+ <div class="clearfix dices-container row-centered">
+      <div *ngFor="let dice of dices" class="dice-result col-lg-2 col-md-2 col-sm-4 col-xs-4 col-centered">
         <img class="dice-image" src={{dice.image}}>
-      </td>
-    </tr>
-    </table>
-
+      </div>
+    </div>
 </div>
 

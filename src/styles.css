@@ -4,16 +4,33 @@
 
 body{
   background-color: #fafafa;
+  overflow: auto;
+  position: relative;
+  margin: 0;
+  padding-bottom: 7rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
-body,html{
+
+html{
+  box-sizing: border-box;
   height: 100%;
-  overflow-y: auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 .spinner {
   width: 80px;
   height: 80px;
-  background-color: #333;
+  background-color: #000;
   //margin: 100px auto;
 
   position: absolute;

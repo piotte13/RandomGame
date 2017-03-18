@@ -13,7 +13,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { DiceGameComponent } from './dice-game/dice-game.component';
 import { FooterComponent } from './footer/footer.component';
 
-
 const appRoutes: Routes = [
   { path: 'dick-length', component: PhallusLengthGameComponent },
   { path: 'Game-choice', component: InitFormComponent },
@@ -29,14 +28,14 @@ const appRoutes: Routes = [
     BannerComponent,
     PhallusLengthGameComponent,
     DiceGameComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
     DropdownModule.forRoot(),
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

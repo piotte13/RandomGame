@@ -15,10 +15,12 @@ export class DiceGameComponent {
     this.dices = new Array();
   }
 
-  public roll(nb: number){
+  public rollDices(nb: number){
     this.dices = new Array();
     for(let i = 0; i < nb ; i++){
-      this.dices.push(new Dice6f(Math.round((Math.random() * 5)+1)));
+      var d = new Dice6f();
+      d.roll();
+      this.dices.push(d);
     }
   }
 }

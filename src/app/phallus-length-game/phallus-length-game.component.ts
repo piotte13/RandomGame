@@ -1,6 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Player } from "../player"
 import * as _ from "lodash";
+
 
 @Component({
   selector: 'app-phallus-length-game',
@@ -19,7 +20,7 @@ export class PhallusLengthGameComponent{
     this.players.push(new Player("Charles"));
     this.players.push(new Player("Maxime"));
     this.players.push(new Player("Jean"));
-    this.players.push(new Player("Shelsea"));
+    this.players.push(new Player("Roxane"));
     this.audio = new Audio();
     this.audio.src = "../../assets/growing_sound_effect.mp3"
     this.audio.load();
@@ -28,29 +29,15 @@ export class PhallusLengthGameComponent{
   protected populatePlayersDick(){
     this.audio.play();
     this.animate = !this.animate;
-    for(let i = 0;  i < this.players.length; i++){
-      this.players[i].dick = this.calculateDickLength();
-    }
+    _.map(this.players, (p: Player) => p.setDickLength());
     _.delay(() => {this.animate = true;}, 5);
   }
 
   public addPlayer(name){
-    console.log(name);
     if(name.length > 0) this.players.push(new Player(name));
   }
 
   public deletePlayer(player: Player){
     _.remove(this.players, player);
-  }
-
-  private calculateDickLength(){
-    let score = Math.random() * 100;
-    let result = "8";
-
-    for(let i = 0 ; i < score ; i++){
-      result += "=";
-    }
-    result += "D";
-    return result;
   }
 }
