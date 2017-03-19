@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banner.component.css']
 })
 export class BannerComponent implements OnInit {
-  title = " Wolves of Peel Street";
+  title = "RollTheD.com";
 
   constructor() { }
 

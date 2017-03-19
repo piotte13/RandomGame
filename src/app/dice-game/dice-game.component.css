@@ -2,9 +2,8 @@
   box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   padding: 20px;
-  margin-top: 50px;
+  margin-top: 6%;
   background-color: #ffffff;
-  margin-bottom: 25px;
 }
 
 .dice-result{
@@ -19,7 +18,7 @@
 }
 
 .dices-container{
-  margin-top: 15%;
+  margin-top: 10%;
   text-align: center;
 }
 
@@ -30,4 +29,16 @@
 .col-centered {
   display:inline-block;
   float:none;
+}
+
+@media only screen and (max-width: 768px) {
+  .dices-container{
+    margin-top: 4%;
+    text-align: center;
+  }
+  .dice-result{
+    font-size: 100px;
+    text-align: center;
+    padding: 0;
+  }
 }

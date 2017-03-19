@@ -15,3 +15,7 @@
 .title:hover{
   color: #c9302c;
 }
+
+.navbar-header{
+  padding-left: 1%;
+}
