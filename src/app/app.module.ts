@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { InitFormComponent } from './init-form/init-form.component';
 import { BannerComponent } from './banner/banner.component';
 import { PhallusLengthGameComponent } from './phallus-length-game/phallus-length-game.component';
-import { DropdownModule } from 'ng2-bootstrap'
 
 import { RouterModule, Routes } from '@angular/router';
 import { DiceGameComponent } from './dice-game/dice-game.component';
@@ -32,7 +31,6 @@ const appRoutes: Routes = [
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
-    DropdownModule.forRoot(),
     BrowserModule,
     FormsModule,
     HttpModule,

@@ -2,12 +2,13 @@
 <div class="card-container clearfix">
   <div class="card col-lg-12 text-center">
     <div class="btn-group" dropdown>
-      <button id="single-button" type="button" class="btn btn-danger" dropdownToggle>
-        Quantity of dices <span class="caret"></span>
-      </button>
-      <ul dropdownMenu role="menu" class="text-center" aria-labelledby="single-button">
-          <li role="menuitem" *ngFor="let number of possibleNumberOfDiceChoice"><a class="dropdown-item" (click)="rollDices(number)">{{number}}</a></li>
-      </ul>
+      <select dropdownMenu role="menu" class="text-center form-control" aria-labelledby="single-button" (change)="setQuantity($event.target.value)">
+          <option role="menuitem" disabled="disabled">Quantity of dices</option>      
+          <option role="menuitem" *ngFor="let number of possibleNumberOfDiceChoice" (click)="setQuantity(number)">{{number}}</option>
+      </select>
+    </div>
+    <div class="btn btn-danger" (click)="rollDices()">
+      Roll The Dices
     </div>
     <div class="btn btn-default" routerLink="/Game-choice">
       Change Game
